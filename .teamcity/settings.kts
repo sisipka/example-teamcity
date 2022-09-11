@@ -50,6 +50,7 @@ object Build : BuildType({
         }
         maven {
             name = "Deploy"
+            enabled = false
 
             conditions {
                 equals("teamcity.build.branch.is_default", "true")
